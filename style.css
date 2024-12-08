@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: #e9ecef;
 }
 
 #container {
@@ -11,18 +12,65 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f5f5f5;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+h1 {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.mark-done {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 2px solid #007bff;
+  border-radius: 40%; /* Make it a circle */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mark-done.completed {
+  background-color: #007bff;
 }
 
 button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #007bff;
+  padding: 6px 10px;
+  background-color: #dc3545;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -30,7 +78,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #a71d2a;
 }
 
 button:focus {
