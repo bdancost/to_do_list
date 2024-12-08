@@ -20,3 +20,9 @@ function addTask() {
     alert("Please enter a task.");
   }
 }
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
